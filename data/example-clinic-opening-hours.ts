@@ -1,9 +1,9 @@
-export type ClinicOpeningHours = {
+export type ClinicOpeningHour = {
   name: string;
   openingHours: string[];
-}[];
+};
 
-export const exampleClinicOpeningHours: ClinicOpeningHours = [
+export const exampleClinicOpeningHours: ClinicOpeningHour[] = [
   {
     name: "Mayo Clinic",
     openingHours: ["Mon-Sun 8am to 9pm"],
