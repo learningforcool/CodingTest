@@ -39,6 +39,8 @@ For larger datasets, saving data process or data migration will probably consume
 
 ## Further Work
 
-Currently, extracting data from example dataset is still a bit time consuming. In the future, we might want to concider to put the extracted data into a secondary database (or a in-memory database like Redis), and connect them with an event driven flow. Once an update event is happened to the example dataset, it will trigger an update action just for the changed data.
+1. Currently, extracting data from example dataset is still a bit time consuming. In the future, we might want to concider to put the extracted data into a secondary database (or a in-memory database like Redis), and connect them with an event driven flow. Once an update event is happened to the example dataset, it will trigger an update action just for the changed data.
 
-Some code refactors might also needed. e.g, putting types, utils method into seperated files.
+2. Some code refactors might also needed. e.g, putting types, utils method into seperated files.
+
+3. Current solution assumed clinic opening hour scheduled by the hours, might meet edge cases that opening hour scheduled by half an hour or even quarter of an hour. then will need to adjuest the logic to adapt those scenarios.
