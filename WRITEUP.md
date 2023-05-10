@@ -40,3 +40,5 @@ For larger datasets, saving data process or data migration will probably consume
 ## Further Work
 
 Currently, extracting data from example dataset is still a bit time consuming. In the future, we might want to concider to put the extracted data into a secondary database (or a in-memory database like Redis), and connect them with an event driven flow. Once an update event is happened to the example dataset, it will trigger an update action just for the changed data.
+
+Some code refactors might also needed. e.g, putting types, utils method into seperated files.
